@@ -19,7 +19,7 @@
 
 <center>
 <br>
-<table bgcolor=F0F0F0 width=1000>
+<table bgcolor=F8F8F8 width=1000>
 <tr>
 <td width=50> </td>
 <td width=800>
@@ -32,10 +32,16 @@
 
 <tr><td></td>
 <td>
-<div style="float: right; clear:right;display: inline"><font color="red">NAACL 2018</font></div>
-<font size=5>Overview</font>
-<p style="text-align: justify;">Deep learning has brought a wealth of state-of-the-art results and new capabilities. Although methods have achieved near human-level performance on many benchmarks, numerous recent studies imply that these benchmarks only weakly test their intended purpose, and that simple examples produced either by human or machine, cause systems to fail spectacularly [1-7]. For example, a recently released textual entailment demo was criticized on social media for predicting that “John killed Mary” entails “Mary killed John” with 92% confidence.1 Such surprising failures combined with the in- ability to interpret state-of-the-art models have eroded confidence in our systems, and while these systems are not perfect, the real flaw lies with our benchmarks that do not adequately measure a model’s ability to generalize, and are thus easily gameable.</p>
+<center><p bgcolor=white><b>TL;DR</b> -- We have brittle models that aren't explainable.  Let's analyze their failings and propose new evaluations</p></center>
+<div style="float: right; clear:right;display: inline"><font color="red"><b>NAACL 2018!</b></font></div>
 
+<font size=5>Overview</font>
+<p style="text-align: justify;">Deep learning has brought a wealth of state-of-the-art results and new capabilities. Although methods have achieved near human-level performance on many benchmarks, numerous recent studies imply that these benchmarks only weakly test their intended purpose, and that simple examples produced either by human or machine, cause systems to fail spectacularly [1-7]. For example, a recently released textual entailment demo was criticized on social media for predicting:
+
+  <center><table><tr><td>“John killed Mary”</td><td width=30><center>&#8594;</center></td><td>“Mary killed John”</td></tr>
+          <tr><td colspan=3><center><font color=red>Entailing</font> with 92% confidence</center></td></tr></table></center>
+<br>
+Such surprising failures combined with the inability to interpret state-of-the-art models have eroded confidence in our systems, and while these systems are not perfect, the real flaw lies with our benchmarks that do not adequately measure a model’s ability to generalize, and are thus easily gameable.</p>
 <p>This workshop provides a venue for exploring new approaches for measuring and enforcing generalization in models. We are soliciting work in the following areas:</p>
 
 <ul>
@@ -44,15 +50,17 @@
 <li><strong>Modeling advances</strong> <br>regularization, compositionality, interpretability, inductive bias, multi-task learning, and other methods that promote generalization.</li>
 </ul>
 <p text-align: justify;>Some of our goals are similar in spirit to those of the recent “Build it Break it” shared task (Ettinger et al., 2017). However, we propose going beyond identifying areas of weakness (i.e. “breaking” existing systems), and discussing scalable evaluations that more rigorously test generalization as well as modeling techniques for enforcing it.</p>
+<br><br>
 </td><td></td></tr>
 
-<tr><td></td><td>
-<br><br>
-<font size=5>Important Dates</font><br>
-Deadline for submission: TBD<br>
-Notification of acceptance: TBD<br>
-Camera Ready: TBD<br>
-Workshop date: TBD<br>
+<tr ><td></td><td bgcolor=e6e6ff>
+<font size=5 color=3333ff>Important Dates</font><br>
+<table>
+<tr><td>Deadline for submission</td><td><font color=red><b>March  9, 2018</b></font></td></tr>
+<tr><td>Notification of acceptance</td><td>April  2, 2018</td></tr>
+<tr><td>Camera Ready</td><td>April 16, 2018</td></tr>
+<tr><td>Workshop date</td><td>TBD</td></tr>
+</table>
 </td>
 <td></td>
 </tr>
@@ -60,7 +68,7 @@ Workshop date: TBD<br>
 
 <tr><td></td><td>
 <br>
-<font size=5>Submission Formats</font>
+<font size=5 color=009933>Submission Formats</font>
 <ul>
 <li>Adversarial examples / Breaking an existing system<div style="float: right; clear: right;">– 2 pages</div></li>
 <li>Archival dataset, benchmark, or modeling papers<div style="float: right; clear: right;">– 4 pages</div></li>
@@ -75,7 +83,7 @@ Submission site: <a href="https://www.softconf.com/naacl2018/Gen-Deep18/">https:
 <tr><td colspan=3><br></td></tr>
 <tr><td></td><td>
 <br><br>
-<font size=5>Invited Speakers and Panelists:</font>
+<font size=5 color=ff9900>Invited Speakers and Panelists:</font>
 <ul  style="list-style: none;">
 <li><a href="http://faculty.washington.edu/ebender/">Emily Bender</a><div style="float: right; clear: right;">University of Washington</div></li>
 <li><a href="https://www.nyu.edu/projects/bowman/">Sam Bowman</a>    <div style="float: right; clear: right;">New York University</div></li>
@@ -90,7 +98,7 @@ Submission site: <a href="https://www.softconf.com/naacl2018/Gen-Deep18/">https:
 </td><td></td></tr>
 
 <tr><td></td><td>
-<font size=5>Organizers:</font><br>
+<font size=5 color=cc3399>Organizers:</font><br>
 <ul style="list-style: none;">
 <li><a href="https://homes.cs.washington.edu/~my89/">Mark Yatskar</a><div style="float: right; clear: right;">Univ Washington</div></li>
 <li><a href="http://www.YonatanBisk.com">Yonatan Bisk</a><div style="float: right; clear: right;">Univ Washington</div></li>
@@ -99,7 +107,7 @@ Submission site: <a href="https://www.softconf.com/naacl2018/Gen-Deep18/">https:
 </td><td></td></tr>
 
 <tr><td></td><td>
-<font size=5>Steering committee:</font><br>
+<font size=5 color=6600cc>Steering committee:</font><br>
 <ul  style="list-style: none;">
 <li>Yejin Choi      <div style="float: right; clear: right;">University of Washington</div></li>
 <li>Devi Parikh     <div style="float: right; clear: right;">Georgia Tech / Facebook AI Research</div></li>
