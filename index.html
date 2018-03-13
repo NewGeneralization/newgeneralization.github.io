@@ -15,6 +15,8 @@
   gtag('config', 'UA-8024377-9');
 </script>
 
+
+
 </head>
 <body bgcolor=white style="font-family: 'Helvetica Light';">
 
@@ -26,10 +28,12 @@
 <td width=800>
 <br>
 <center><font size=6>Workshop on New Forms of Generalization<br> in Deep Learning and Natural Language Processing</font></center>
+<p id="demo"></p>
 </td>
-<td width=50> </td>
 </tr>
 <tr><td colspan=3><br></td></tr>
+
+
 
 <tr><td></td>
 <td>
@@ -172,5 +176,42 @@ Categories (1) and (2) are expected to use the NAACL-HLT 2018 style guides: <a h
 
 
 </table>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("March 16, 2018 23:23:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+	
+
+ / Get todays date and time
+  var now = new Date().getTime();
+
+  now = now - (d.getTimezoneOffset() * 60000);
+  var then = countDownDate - (12 * 60000)
+
+  // Find the distance between now an the count down date
+  var distance = then - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = "Submission deadline in " + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+
 </body>
 </html>
