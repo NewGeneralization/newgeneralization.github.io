@@ -28,7 +28,6 @@
 <td width=800>
 <br>
 <center><font size=6>Workshop on New Forms of Generalization<br> in Deep Learning and Natural Language Processing</font></center>
-<p id="demo"></p>
 </td>
 </tr>
 <tr><td colspan=3><br></td></tr>
@@ -40,6 +39,7 @@
 <center><p style="background:lightyellow;"><b>TL;DR:</b> We build models that work well on our datasets but when we play with them we are surprised that they are brittle and break.<br/>Let’s analyze their failings propose new evaluations &amp; models.</p></center>
 <div style="float: right; clear:right;display: inline"><font color="red"><b>NAACL 2018!</b></font></div>
 
+<b style="color:red;"><p id="demo"></p></b>
 <font size=5>Overview</font>
 <p style="text-align: justify;">Deep learning has brought a wealth of state-of-the-art results and new capabilities. Although methods have achieved near human-level performance on many benchmarks, numerous recent studies imply that these benchmarks only weakly test their intended purpose, and that simple examples produced either by human or machine, cause systems to fail spectacularly<sup><a href="#one">[1]</a><a href="#two">[2]</a><a href="#three">[3]</a><a href="#four">[4]</a><a href="#five">[5]</a><a href="#six">[6]</a><a href="#seven">[7]</a></sup>. For example, a recently released textual entailment demo was criticized on social media for predicting:
 
@@ -179,17 +179,19 @@ Categories (1) and (2) are expected to use the NAACL-HLT 2018 style guides: <a h
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("March 16, 2018 23:23:59").getTime();
+var countDownDate = new Date("March 16, 2018 23:59:59 GMT-1200")
 
 // Update the count down every 1 second
 var x = setInterval(function() {
 	
 
 // Get todays date and time
-  var now = new Date().getTime();
+  var d = new Date()
+  
+  var now = d.getTime();
 
   now = now - (d.getTimezoneOffset() * 60000);
-  var then = countDownDate - (12 * 60000)
+  var then = countDownDate.getTime() - (countDownDate.getTimezoneOffset() * 60000)
 
   // Find the distance between now an the count down date
   var distance = then - now;
