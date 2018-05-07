@@ -36,14 +36,35 @@
 
 <tr><td></td>
 <td>
-<center><p style="background:lightyellow;"><b>TL;DR:</b> We build models that work well on our datasets but when we play with them we are surprised that they are brittle and break.<br/>Let’s analyze their failings propose new evaluations &amp; models.</p></center>
-<div style="float: right; clear:right;display: inline"><font color="red"><b>NAACL 2018!</b></font></div>
 
+<div style="float: right; clear:right;display: inline"><font color="red"><b>June 5th at NAACL 2018!</b></font></div>
+<br>
+<center><p style="background:lightyellow;"><b>TL;DR:</b> We build models that work well on our datasets but when we play with them we are surprised that they are brittle and break.<br/>Let’s analyze their failings propose new evaluations &amp; models.</p></center>
+<br>
+<center><table bgcolor=e6e6ff style="text-align:center" width="50%">
+<tr><td colspan=3><font size=5><u>Expected Schedule</u></font></td>
+<tr><td colspan=3 style="text-align:center"><a href="https://naacl2018.wordpress.com/2018/01/19/onsite-childcare/"><font color=red>Onsite Childcare Available</font></a></td></tr>
+<tr><td><u>Time</u></td><td><u>Speaker</u></td><td><u>Topic</u></td></tr>
+<tr><td>9:00 - 9:15</td><td>Organizers</td><td>Welcome and Introduction</td></tr>
+<tr><td>9:15 - 9:50</td><td>Yejin Choi</td></tr>
+<tr><td>9:50 - 10:25</td><td>Dan Roth</td></tr>
+<tr><td>10:25 - 10:35</td><td>Break</td></tr>
+<tr><td>10:35 - 11:10</td><td>Percy Liang</td></tr>
+<tr><td>11:10 - 11:45</td><td>Ndapa Nakashole</td></tr>
+<tr><td>11:45 - 12:20</td><td>Hal Daumé III</td></tr>
+<tr><td>12:20 - 1:30</td><td>Lunch</td><td>Eating Food</td></tr>
+<tr><td>1:30 - 2:30</td><td>Poster Session</td><td></td></tr>
+<tr><td>2:45 - 3:20</td><td>Sam Bowman</td><td></td></tr>
+<tr><td>3:20 - 3:55</td><td>Devi Parikh</td><td></td></tr>
+<tr><td>4:10 - 5:10</td><td>Panel</td><td>Discussion questions from audience</td></tr>
+<tr><td>5:10 - 5:15</td><td>Organizers</td><td>Closing Remarks</td></tr>
+</table>
+</center>
 <b style="color:red;"><p id="demo"></p></b>
 <font size=5>Overview</font>
 <p style="text-align: justify;">Deep learning has brought a wealth of state-of-the-art results and new capabilities. Although methods have achieved near human-level performance on many benchmarks, numerous recent studies imply that these benchmarks only weakly test their intended purpose, and that simple examples produced either by human or machine, cause systems to fail spectacularly<sup><a href="#one">[1]</a><a href="#two">[2]</a><a href="#three">[3]</a><a href="#four">[4]</a><a href="#five">[5]</a><a href="#six">[6]</a><a href="#seven">[7]</a></sup>. For example, a recently released textual entailment demo was criticized on social media for predicting:
 
-  <center><table><tr><td>“John killed Mary”</td><td width=30><center>&#8594;</center></td><td>“Mary killed John”</td></tr>
+  <center><table><tr><td width="30%">“John killed Mary”</td><td width="30%"><center>&#8594;</center></td><td width="30%">“Mary killed John”</td></tr>
           <tr><td colspan=3><center><font color=red>Entailing</font> with 92% confidence</center></td></tr></table></center>
 <br>
 Such surprising failures combined with the inability to interpret state-of-the-art models have eroded confidence in our systems, and while these systems are not perfect, the real flaw lies with our benchmarks that do not adequately measure a model’s ability to generalize, and are thus easily gameable.</p>
@@ -55,55 +76,41 @@ Such surprising failures combined with the inability to interpret state-of-the-a
 <li><strong>Modeling advances</strong> <br>regularization, compositionality, interpretability, inductive bias, multi-task learning, and other methods that promote generalization.</li>
 </ul>
 <p text-align: justify;>Some of our goals are similar in spirit to those of the recent “Build it Break it” shared task.<sup><a href="#eight">[8]</a></sup> However, we propose going beyond identifying areas of weakness (i.e. “breaking” existing systems), and discussing scalable evaluations that more rigorously test generalization as well as modeling techniques for enforcing it.</p>
-<br><br>
 </td><td></td></tr>
+<tr><td></td></tr>
+<tr ><td></td><td>
 
-<tr ><td></td><td bgcolor=e6e6ff>
-<font size=5 color=3333ff>Important Dates</font><br>
-<table>
-<tr><td>Deadline for submission</td><td>March  16, 2018</td></tr>
-<tr><td>Notification of acceptance</td><td>April  2, 2018</td></tr>
-<tr><td>Camera Ready</td><td><font color=red><b>April 16, 2018</b></font></td></tr>
-<tr><td>Workshop date</td><td>June 5, 2018</td></tr>
-<tr><td colspan=2><a href="https://naacl2018.wordpress.com/2018/01/19/onsite-childcare/"><font color=red>Onsite Childcare Available</font></a></td></tr>
-</table>
 </td>
 <td></td>
 </tr>
 
-
 <tr><td></td><td>
+
 <br>
-<font size=5 color=009933>Submission Formats</font>
-<ul>
-<li>Adversarial examples / Breaking an existing system<div style="float: right; clear: right;">– 2 pages</div></li>
-<li>Archival dataset, benchmark, or modeling papers<div style="float: right; clear: right;">– 4 pages</div></li>
-<li>Non-archival cross submissions<div style="float: right; clear: right;">– 8 pages</div></li>
-</ul>
-Categories (1) and (2) are expected to use the NAACL-HLT 2018 style guides: <a href="http://naacl2018.org/downloads/naaclhlt2018-latex.zip">LaTex</a>, <a href="http://naacl2018.org/downloads/naaclhlt2018-word.zip">Word</a>, or <a href="https://www.overleaf.com/11236538xkqdqtnqjgty">Overleaf</a>.<br><br>
-<b>(Non-)Archival</b>:  Archival means the work can be included in our proceedings.  This means the work has not previously been published in a peer-reviewed venue and won't be submitted to one in the future.  If your work was previously published or is under submission elsewhere, please choose non-archival so you can still present a poster/talk but we won't publish your paper in the ACL anthology.
-<br><br>
-<b>Submission site</b>: <a href="https://www.softconf.com/naacl2018/Gen-Deep18/">https://www.softconf.com/naacl2018/Gen-Deep18/</a>
-</td>
-<td></td>
-</tr>
-
-<tr><td colspan=3><br></td></tr>
-<tr><td></td><td>
-<br><br>
-<font size=5 color=ff9900>Invited Speakers and Panelists:</font>
-<ul  style="list-style: none;">
-<li><a href="https://www.nyu.edu/projects/bowman/">Sam Bowman</a>    <div style="float: right; clear: right;">New York University</div></li>
-<li><a href="https://homes.cs.washington.edu/~yejin/">Yejin Choi</a> <div style="float: right; clear: right;">University of Washington</div></li>
-<li><a href="https://www.umiacs.umd.edu/~hal/">Hal Daume III</a>     <div style="float: right; clear: right;">U Maryland College-Park</div></li>
-<li><a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>       <div style="float: right; clear: right;">Stanford University</div></li>
-<li><a href="http://nakashole.com/">Ndapa Nakashole</a>              <div style="float: right; clear: right;">UC San Diego</div></li>
-<li><a href="https://www.cc.gatech.edu/~parikh/">Devi Parikh</a>     <div style="float: right; clear: right;">Georgia Tech / Facebook AI Research</div></li>
-<li><a href="http://www.cis.upenn.edu/~danroth/">Dan Roth</a>        <div style="float: right; clear: right;">University of Pennsylvania</div></li>
-</ul>
-</td><td></td></tr>
-
-<tr><td></td><td>
+<font size=5>Accepted Posters</font>
+<br>
+<br>
+<table style="text-align:center" border=1>
+<tr><td width="50%">Commonsense mining as knowledge base completion?<br>A study on the impact of novelty</td><td width="50%">Stanislaw Jastrzebski, Dzmitry Bahdanau, Seyedarian Hosseini, Michael Noukhovitch, Yoshua Bengio and Jackie Cheung</td></tr>
+<tr><td width="50%">Deep learning evaluation using deep linguistic processing</td><td width="50%">Alexander Kuhnle and Ann Copestake</td></tr>
+<tr><td width="50%">The Fine Line between Linguistic Generalization and<br>Failure in Seq2Seq-Attention Models </td><td width="50%">Noah Weber, Leena Shekhar and Niranjan Balasubramanian</td></tr>
+<tr><td width="50%">Extrapolation in NLP</td><td width="50%">Jeff Mitchell, Pontus Stenetorp, Pasquale Minervini and Sebastian Riedel</td></tr>
+<tr><td width="50%">Towards Inference-Oriented Reading Comprehension: ParallelQA</td><td width="50%">Soumya Wadhwa, Varsha Embar, Matthias Grabmair and Eric Nyberg</td></tr>
+</table>
+<br>
+<br>
+<font size=5>Accepted Cross / Non Archival Submissions (to be presented as posters)</font>
+<br>
+<br>
+<table style="text-align:center" border=1>
+<tr><td width="50%">Annotation Artifacts in Natural Language Inference Data</td><td width="50%">Suchin Gururangan, Swabha Swayamdipta, Omer Levy, Roy Schwartz, Samuel Bowman and Noah A. Smith</td></tr>
+<tr><td width="50%">Stress Test Evaluation for Natural Language Inference</td><td width="50%">Abhilasha Ravichander, Aakanksha Naik, Norman Sadeh, Carolyn Rose and Graham Neubig</td></tr>
+<tr><td width="50%">Deep RNNs Learn Hierarchical Syntax</td><td width="50%">Terra Blevins, Omer Levy and Luke Zettlemoyer</td></tr>
+<tr><td width="50%">Adversarial Example Generation with Syntactically Controlled Paraphrase Networks</td><td width="50%">Mohit Iyyer, John Wieting, Kevin Gimpel and Luke Zettlemoye</td></tr>
+<tr><td width="50%">Evaluating Compositionality in Sentence Embeddings</td><td width="50%">Ishita Dasgupta, Demi Guo, Andreas Stuhlmüller, Samuel Gershman and Noah Goodman</td></tr>
+</table>
+<br>
+<br>
 <font size=5 color=cc3399>Organizers:</font><br>
 <ul style="list-style: none;">
 <li><a href="https://homes.cs.washington.edu/~my89/">Mark Yatskar</a><div style="float: right; clear: right;">Univ Washington</div></li>
@@ -208,7 +215,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text 
   if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "";
   }
 }, 1000);
 </script>
